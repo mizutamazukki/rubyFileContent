@@ -12,12 +12,20 @@ module DBConnector
         '" + item[1] + "'
         '" + item[1] + "')", :cast => false)
         result.each(:as => :array) do |row|
+          arr = Array.new
           counts = counts + 1;
-          text = "insert into suggest value ('" + counts.to_s + "' ,'" + row[0].to_s + "','" + item[1] + "','"+ item[1] +"');";
+          pp "==============="
+
+          pp arr.push(row[0].to_s)
+          pp arr.push(item[1])
+          pp arr.push(item[1])
+          pp arr.join(",")
+          pp "==============="
+
+          text = "insert into suggest value ("+ counts.to_s + ",'"+ arr.join("',' ") +"');";
           File.open("./hoge.sql","a:UTF-8:US-ASCII") do |file|
             file.puts text
           end
-          #File.close
 
         end
       }
