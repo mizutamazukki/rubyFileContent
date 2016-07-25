@@ -1,0 +1,38 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    mini_portile2 (2.1.0)
+    mysql2 (0.4.4)
+    nokogiri (1.6.8)
+      mini_portile2 (~> 2.1.0)
+      pkg-config (~> 1.1.7)
+    pkg-config (1.1.7)
+    redcard (1.1.0)
+    roo (2.4.0)
+      nokogiri (~> 1)
+      rubyzip (~> 1.1, < 2.0.0)
+    ruby-ole (1.2.12)
+    rubyXL (3.3.21)
+      nokogiri (>= 1.4.4)
+      rubyzip (>= 1.1.6)
+    rubysl-win32ole (0.0.1)
+      redcard (~> 1.0)
+    rubyzip (1.2.0)
+    spreadsheet (1.1.2)
+      ruby-ole (>= 1.0)
+    wrap_excel (0.1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  mysql2
+  roo
+  ruby-ole
+  rubyXL
+  rubysl-win32ole
+  spreadsheet
+  wrap_excel
+
+BUNDLED WITH
+   1.12.5
